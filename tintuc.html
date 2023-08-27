@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tin tức - Thế giới điện thoại</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/tintuc.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="body-tintuc">
+            <div class="tintuc-info">
+                <a href="https://www.24h.com.vn/thoi-trang-hi-tech/sau-5-nam-iphone-moi-thuc-su-len-voi-c407a1489221.html" target="_blank">
+                    <img src="img/tintuc/iphonesau5.png">
+                    <h2>Sau 5 năm, iPhone mới thực sự "lên voi"</h2>
+                </a>
+                <br/>
+                <h5>Doanh ngiệp &emsp;</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://www.24h.com.vn/thoi-trang-hi-tech/nhung-smartphone-se-ra-mat-thi-truong-vao-thang-8-c407a1489120.html" target="_blank">
+                    <img src="img/tintuc/thang8.jpg">
+                    <h2>Những smartphone sẽ ra mắt thị trường trong tháng 8</h2>
+                </a>
+                <br/>
+                <h5>Thanh niên &emsp;</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://vietq.vn/chiec-dien-thoai-thong-minh-nay-cua-lg-se-co-toi-16-camera-d151674.html" target="_blank">
+                    <img src="img/tintuc/camera.jpg">
+                    <h2>Chiếc điện thoại thông minh này của LG sẽ có tới 16 Camera</h2>
+                </a>
+                <br/>
+                <h5>VOV &emsp;</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://genk.vn/redmi-12-can-moc-100000-may-ra-tai-viet-nam-dien-thoai-quoc-dan-la-day-chu-dau-20230801223552324.chn" target="_blank">
+                    <img src="img/tintuc/redmi.webp">
+                    <h2>Redmi 12 cán mốc 100.000 máy bán ra tại Việt Nam: Điện thoại quốc dân là đây chứ đâu!</h2>
+                </a>
+                <br/>
+                <h5>VietQ &emsp;</h5>
+            </div>
+            <div class="tintuc-info" style="border-bottom: 0;">
+                <a href="https://genk.vn/so-sanh-samsung-galaxy-z-fold5-duoc-nang-cap-nhung-gi-so-voi-galaxy-z-fold4-202308021710088.chn" target="_blank">
+                    <img src="img/tintuc/fold1.webp" height="148px" width="224px;">
+                    <h2>So sánh Samsung Galaxy Z Fold5 được nâng cấp những gì so với Galaxy Z Fold4</h2>
+                </a>
+                <br/>
+                <h5>Zing &emsp;</h5>
+            </div> 
+
+        </div>
+
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+
+</body>
+
+</html>
